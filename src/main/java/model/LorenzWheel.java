@@ -2,11 +2,11 @@ package model;
 
 import java.util.ArrayList;
 
-public class ChiWheels {
+public class LorenzWheel {
   private ArrayList<Boolean> cams;
   private int currPos;
 
-  public ChiWheels(int size) {
+  public LorenzWheel(int size) {
     this.cams = new ArrayList<>();
     this.currPos = 0;
     // cam/notch initialization (all 0's)
