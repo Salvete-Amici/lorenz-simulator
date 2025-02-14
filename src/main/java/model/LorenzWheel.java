@@ -7,7 +7,10 @@ public class LorenzWheel {
   private int currPos;
 
   public LorenzWheel(int size) {
+    // for each wheel, cams hold size(wheel) # of 0/1 vals representing the config
+    // of cams
     this.cams = new ArrayList<>();
+    // currPos is the index of bit val that is used for XORing
     this.currPos = 0;
     // cam/notch initialization (all 0's)
     for (int i = 0; i < size; i++) {
